@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Users List</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>Users List</h1>
+    <button id="createUserButton">Create New User</button>
+    <table id="usersTable">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>P5 Balance</th>
+                <th>Reward Balance</th>
+                <th>Edit</th>
+            </tr>
+        </thead>
+        <tbody id="usersTableBody">
+        </tbody>
+    </table>
+
+    <div id="newUserForm" style="display:none;">
+        <h2>Create User</h2>
+        <form id="createUserForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br>
+            <!-- <label for="p5Balance">P5 Balance:</label>
+                                    <input type="number" id="p5Balance" name="p5Balance" required><br>
+                                    <label for="rewardsBalance">Reward Balance:</label>
+                                    <input type="number" id="rewardsBalance" name="rewardsBalance" required><br> -->
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <div id="loadingIndicator" style="display:none;">Loading...</div>
+    <script src="script.js"></script>
+</body>
+
+</html>
